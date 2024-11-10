@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  flask:
+    container_name: flask
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ./..
+    ports:
+      - 443:443
