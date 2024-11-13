@@ -1,4 +1,16 @@
-<form method="POST" action="/form" enctype="multipart/form-data">
-  <input type="file" name="picture">
-  <button>実行!!!</button>
-</form>
+{% extends "base.html" %}
+{% block content %}
+  <form method="POST" action="/form" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label>
+        Input!!!
+        <input type="file" name="picture" class="form-control">
+      </label>
+    </div>
+    <div>
+      <label>
+        <button class="btn btn-info">実行!!!</button>
+      </label>
+    </div>
+  </form>
+{% endblock %}
